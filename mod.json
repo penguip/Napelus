@@ -1,9 +1,9 @@
 name: "nap"
 displayName: "[#595959[]] Napelus."
 author: Titan
-description: "A mindustry mod that adds a new planet with its own campaign, still WIP. Works all alone on this mod,you could be a mapper,spriter or a coder. discord server: https://discord.gg/Rj4BJV4Spd
+description: "A mindustry mod that adds a new planet with its own campaign, still WIP.Discord server: https://discord.gg/Rj4BJV4Spd
 version: "1.0"
-subtitle: "[#FF0008[]]The end is near"
+subtitle: "[#FF0008[]] The end is near"
 minGameVersion: "152.2"
 dependencies: [ ]
 hidden: false
