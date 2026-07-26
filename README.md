@@ -13,4 +13,4 @@ the end is near
 
 
 join the discord if you want to talk about the mod or suggest ideas
-https//discord.gg/Mgt5Df77Q
+https://discord.gg/Rj4BJV4Spd
