@@ -6,8 +6,6 @@ difficulty: 2
 research: {
   parent: snowy-river 
   objectives: [
-  10b-blade-refabricator
-  10h-naval-refab
     {
       type: SectorComplete
       preset: snowy-river 
