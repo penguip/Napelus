@@ -26,7 +26,7 @@ consumes: {
     menite/1
     ]
     liquids: [
-      ilum/0.17
+      ilum/0.16
     ]
 }
 generateEffectRange: 1
