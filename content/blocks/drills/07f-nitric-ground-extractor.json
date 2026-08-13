@@ -1,0 +1,73 @@
+type: AttributeCrafter
+name: Nitric Extractor
+description: Extracts nitrogen trapped inside nitric fissures
+attribute: nitric
+size: 3
+hasLiquids: true
+squareSprite: false
+outputLiquid: nitrogen/1.5
+displayEfficiencyScale: 1
+baseEfficiency: 0
+squareSprite: false
+minEfficiency: 0.3
+category: production
+shownPlanets: [napelus,Stella]
+consumes: {
+  power: 0.25
+}
+liquidCapacity: 180
+requirements: [
+  iron/65
+  benite/50
+  silver/35
+  magnesium/25
+]
+research: {
+    parent: "07d-exlium-pump",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+researchCost: [
+  iron/500
+  benite/450
+  silver/300
+  magnesium/500
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: exlium
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 5
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+buildCostMultiplier: 2
+ambientSound: elixir
+ambientSoundVolume: 0.06
+group: liquids
+
+
+
+
+
+
+

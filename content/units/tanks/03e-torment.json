@@ -1,0 +1,518 @@
+type: tank
+hitSize: 40
+name: Torment
+databaseTag: tank
+description: HELL
+singleTarget: false
+omniMovement: false
+faceTarget: false
+targetAir: true
+shownPlanets: [napelus]
+health: 26000
+armor: 35
+speed: 0.3
+rotateSpeed: 1
+itemCapacity: 0
+outlineColor: 26262F
+crushDamage: 0.7
+research: {
+    parent: "1-10g-tank-fab",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+treadRects: [
+    {
+        x: -82,
+        y: -99,
+        width: 25,
+        height: 208
+    }
+    {
+        x: -50,
+        y: -119,
+        width: 33,
+        height: 231
+    }
+    {
+        x: 17,
+        y: -119,
+        width: 33,
+        height: 231
+    }
+    {
+        x: 57,
+        y: -99,
+        width: 25,
+        height: 208
+    }
+]
+researchCostMultiplier: 1
+weapons: [
+{
+    "name": "torture-machine-gun",
+    "reload": 55,
+    "mirror": true,
+    "x": 14,
+    "y": 14,
+    "shootY": 2,
+    "recoil": 1,
+    inaccuracy: 10
+    "rotate": true,
+    "rotateSpeed": 2.5
+    shootSound: shootStell
+    shoot: {
+  type: shootPattern
+  shots: 5
+  shotDelay: 5
+}
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 45
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      bulletInterval: 15
+      intervalRandomSpread: 0
+      intervalBullets: 1
+      intervalSpread: 45
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: F58B8B
+        backColor: F58B8B
+        speed: 2.5
+        drag: 0.01
+        lifetime: 35
+        damage: 25
+        splashDamage: 20
+        splashDamageRadius: 16
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: F58B8B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        "homingRange": 200
+        "homingPower": 0.07
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+  {
+    "name": "torture-machine-gun",
+    "reload": 55,
+    "mirror": true,
+    "x": 14,
+    "y": -14,
+    "shootY": 2,
+    "recoil": 1,
+    inaccuracy: 10
+    "rotate": true,
+    "rotateSpeed": 2.5
+    shootSound: shootStell
+    shoot: {
+  type: shootPattern
+  shots: 5
+  shotDelay: 5
+}
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 45
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      bulletInterval: 15
+      intervalRandomSpread: 0
+      intervalBullets: 1
+      intervalSpread: 45
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: F58B8B
+        backColor: F58B8B
+        speed: 2.5
+        drag: 0.01
+        lifetime: 35
+        damage: 25
+        splashDamage: 20
+        splashDamageRadius: 16
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: F58B8B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        "homingRange": 200
+        "homingPower": 0.07
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+  {
+    "name": "torture-machine-gun",
+    "reload": 55,
+    "mirror": true,
+    "x": 20,
+    "y": 0,
+    "shootY": 2,
+    "recoil": 1,
+    inaccuracy: 10
+    "rotate": true,
+    "rotateSpeed": 2.5
+    shootSound: shootStell
+    shoot: {
+  type: shootPattern
+  shots: 5
+  shotDelay: 5
+}
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 45
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      bulletInterval: 25
+      intervalRandomSpread: 0
+      intervalBullets: 1
+      intervalSpread: 45
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: F58B8B
+        backColor: F58B8B
+        speed: 2.5
+        drag: 0.01
+        lifetime: 35
+        damage: 25
+        splashDamage: 20
+        splashDamageRadius: 16
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: F58B8B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        "homingRange": 200
+        "homingPower": 0.07
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+  {
+      "name": "dispute-cannon",
+      "mirror": false,
+      "alternate": true,
+      "top": false,
+      "layerOffset": 1
+      "shake": 5
+      "x": 0,
+      "y": 0,
+      "shootY": 0,
+      "reload": 550,
+      "recoil": 1
+      "cooldownTime": 190,
+       shootSound: shootAfflict
+      "shootStatusDuration": 100,
+      "shootStatus": unmoving,
+      "chargeSound": chargeup
+      "rotate": true
+      "rotateSpeed": 1
+      parts: [
+      {
+type: ShapePart
+circle: true
+y: 0
+radius: 0
+radiusTo: 15
+colorFrom: F58B8B
+colorTo: F58B8B
+progress: charge
+under: true
+layer: 110
+  }
+]
+      "shoot": {
+      "firstShotDelay": 100,
+      "shots": 3
+      "shotDelay": 10
+      },
+        bullet: {
+    type: BasicBulletType
+      speed: 8
+      lifetime: 65
+      damage: 500
+      splashDamage: 355
+        splashDamageRadius: 85
+      hitSize: 25
+      width: 0
+      height: 0
+      sprite: large-orb
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 50
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      weaveScale: 5
+        weaveMag: 4
+      bulletInterval: 25
+      intervalRandomSpread: 5
+      intervalBullets: 6
+      intervalSpread: 45
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: F58B8B
+        backColor: F58B8B
+        speed: 2.5
+        drag: 0.01
+        lifetime: 75
+        damage: 125
+        splashDamage: 45
+        splashDamageRadius: 16
+        width: 10
+        height: 10
+        trailChance: -1
+        trailColor: F58B8B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+      hitEffect: [
+        {
+              type: WaveEffect
+          length: 70
+              baseLength: -80
+          strokeFrom: 3
+          strokeTo: 3
+          sizeTo: 65
+          sizeFrom: 0
+          colorFrom: F58B8B
+          colorTo: F58B8B
+          "lifetime": 45,
+            },
+      ]
+      "chargeEffect": {
+          "type": "multiEffect",
+          "lifetime": 100,
+          "effects": [
+            {
+              type: WaveEffect
+          length: 70
+              baseLength: -80
+          strokeFrom: 3
+          strokeTo: 3
+          sizeTo: 0
+          sizeFrom: 200
+          colorFrom: F58B8B
+          colorTo: F58B8B
+          "lifetime": 45,
+            },
+            {
+             type: WaveEffect
+          length: 70
+              baseLength: -80
+          strokeFrom: 3
+          strokeTo: 3
+          sizeTo: 0
+          sizeFrom: 350
+          colorFrom: a4e2e895
+          colorTo: F58B8B
+          "lifetime": 100,
+            },
+            {
+              type: WaveEffect
+          strokeFrom: 3
+          strokeTo: 3
+          sizeTo: 0
+          sizeFrom: 500
+          colorFrom: a4e2e895
+          colorTo: F58B8B
+          "lifetime": 100,
+            },
+          ]
+        },
+        "shootEffect": "hitEmpSpark"
+    }
+  }
+]

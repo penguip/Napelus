@@ -1,0 +1,53 @@
+type: GenericCrafter
+size: 3
+name: Solarix Light Harvester
+description: Harvest UV and infrared lights from the sunlight of Staria
+category: production
+squareSprite: true
+ignoreLiquidFullness: true
+rotate: true
+  planet: napelus
+    "requirements": [
+	  "iron/300"
+	  "kerenium/300"
+	  "amalgam/300"
+]
+requirements: [
+ "iron/30"
+ "kerenium/55"
+ "amalgam/45"
+]
+craftTime: 120
+hasLiquids: true
+liquidCapacity: 20
+liquidOutputDirections: [0,2]
+outputLiquids: [
+  ultraviolet/0.05
+  infrared-light/0.05
+]
+generateEffect: none
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+  }
+    {
+        type: drawLiquidOutputs
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

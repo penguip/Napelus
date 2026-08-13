@@ -1,0 +1,64 @@
+type: tether
+flying: true
+drag: 0.06
+accel: 0.11
+speed: 3
+health: 200
+engineSize: 2
+engineOffset: 6.5
+payloadCapacity: 0
+targetable: false
+bounded: false
+outlineColor: 26262F
+isEnemy: false
+hidden: true
+useUnitCap: false
+logicControllable: false
+playerControllable: false
+allowedInPayloads: false
+createWreck: false
+controller: CargoAI
+parts: [
+{
+suffix: -propeller
+under: true
+moveRot: 360
+x: -6
+y: -1.5
+layerOffset: -0.01
+progress: {
+type: time
+op: loop
+time: 15
+}
+}
+{
+suffix: -propeller
+under: true
+moveRot: 360
+y: -1.5
+x: 6
+layerOffset: -0.01
+progress: {
+type: time
+op: loop
+time: -15
+}
+}
+{
+ type: RegionPart 
+ suffix: -top
+ x: -6
+ y: -1.5
+layerOffset: -0.01
+ top: true
+}
+{
+type: RegionPart 
+ suffix: -top
+ y: -1.5
+ x: 6
+layerOffset: -0.01
+ top: true
+}
+]

@@ -1,0 +1,19 @@
+type: Duct
+name: Rail Duct
+description: Transport items at high speeds using magnetic force. Fast and reliable.
+category: distribution
+alwaysUnlocked: false
+research: 04a-sil-duct
+researchCost: [
+  iron/10
+  teralite/10
+]
+speed: 5
+health: 50
+bridgeReplacement: 04d-sil-duct-bridge
+requirements: [
+  iron/1
+  teralite/1
+]
+junctionReplacement: 04c-sil-duct-junction
+shownPlanets: [napelus]

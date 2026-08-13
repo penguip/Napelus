@@ -1,0 +1,254 @@
+type: tank
+hitSize: 55
+name: Torment
+databaseTag: tank
+description: HELL
+singleTarget: false
+omniMovement: false
+faceTarget: false
+targetAir: true
+shownPlanets: [napelus]
+health: 54000
+armor: 50
+speed: 0.2
+rotateSpeed: 0.5
+itemCapacity: 0
+outlineColor: 26262F
+crushDamage: 0.9
+research: {
+    parent: "1-10g-tank-fab",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+treadRects: [
+    {
+        x: -116,
+        y: -147,
+        width: 32,
+        height: 296
+    }
+    {
+        x: -61,
+        y: -158,
+        width: 38,
+        height: 296
+    }
+    {
+        x: 22,
+        y: -158,
+        width: 38,
+        height: 296
+    }
+    {
+        x: 83,
+        y: -147,
+        width: 32,
+        height: 296
+    }
+]
+researchCostMultiplier: 1
+weapons: [
+  {
+      "name": "misery-la-burst",
+      "mirror": false,
+      "alternate": true,
+      "top": false,
+      "layerOffset": 1
+      "shake": 5
+      "x": 0,
+      "y": 0,
+      "shootY": 0,
+      "reload": 550,
+      "recoil": 1
+      "cooldownTime": 190,
+       shootSound: shootConquer
+      "shootStatusDuration": 100,
+      "shootStatus": unmoving,
+      "chargeSound": chargeup
+      "rotate": true
+      "rotateSpeed": 1
+      parts: [
+     {
+      type: RegionPart
+      suffix: -partL
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: -2
+      under: true
+      heatColor: 8DF9D1
+    }
+    {
+      type: RegionPart
+      suffix: -partR
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: 2
+      under: true
+      heatColor: 8DF9D1
+    }
+{
+type: ShapePart
+circle: true
+y: 0
+radius: 0
+radiusTo: 15
+colorFrom: F58B8B
+colorTo: F58B8B
+progress: charge
+under: true
+layer: 110
+  }
+]
+      "shoot": {
+      "firstShotDelay": 100,
+      "shots": 3
+      "shotDelay": 10
+      },
+        bullet: {
+    type: BasicBulletType
+      speed: 5
+      lifetime: 135
+      damage: 3500
+      width: 15
+      drag: 0.02
+      height: 20
+      sprite: missile-large
+        frontColor: E04545
+     trailLength: 8
+      trailWidth: 2
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      pierceCap: 10
+      pierce: true
+      weaveScale: 2
+      weaveMag: 2
+      "homingRange": 200
+        "homingPower": 0.02
+      bulletInterval: 10
+      intervalRandomSpread: 0
+      intervalBullets: 1
+      intervalSpread: 45
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: F58B8B
+        backColor: F58B8B
+        speed: 0
+        drag: 0.01
+        lifetime: 135
+        damage: 95
+        splashDamage: 20
+        splashDamageRadius: 16
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: F58B8B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        "homingRange": 200
+        "homingPower": 0.07
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+        fragBullet: {
+        type: ShrapnelBulletType
+        fromColor: F58B8B
+        toColor: F58B8B
+        speed: 0
+        drag: 0.01
+        lifetime: 65
+        damage: 100
+        length: 5
+        width: 5
+        trailChance: -1
+        trailColor: F58B8B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        }
+        parts: [
+      {
+type: ShapePart
+circle: true
+y: 0
+radius: 3
+colorFrom: F58B8B
+colorTo: F58B8B
+under: true
+layer: 110
+  }
+]
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+  }
+]

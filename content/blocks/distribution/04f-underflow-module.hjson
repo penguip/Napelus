@@ -1,0 +1,15 @@
+type: OverflowGate
+size: 1
+health: 65
+requirements: [
+  silver/5
+  iron/2
+]
+invert: true
+category: distribution
+squareSprite: false
+research: 04e-overflow-module
+researchCost: [
+  silver/10
+  iron/4
+]

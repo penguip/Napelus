@@ -1,0 +1,55 @@
+type: UnitAssembler
+name: Tank Assembler
+description: Assembles heavy assualt tank units using blocks and unit. Higher tier require components and needs Xenogen to function 
+size: 5
+health: 1500
+category: units
+droneType: airship-assem-drone
+areaSize: 18
+"buildTime": 1500
+research: 10k-unit-reformer 
+requirements: [
+  benite/500
+  iron/650
+  amalgam/300
+  kerenium/450
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: 03d-torture
+    requirements: [
+      nap-02c-iron-wall/2
+      nap-02j-large-be-wall/4
+      nap-03a-hurt/2
+    ]
+    time: 3300
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 03e-torment
+    requirements: [
+      nap-02o-large-carbide-wall/6
+      nap-02m-large-amalgam-wall/6
+      nap-03b-harm/2
+      nap-reinforced-treads/4
+    ]
+    time: 3300
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 03f-misery
+    requirements: [
+      nap-02q-steel-wall/6
+      nap-02o-large-carbide-wall/6
+      nap-03c-pain/4
+    ]
+    time: 12000
+  }
+]
+squareSprite: false
+consumes: {
+  power: 5
+  liquid: xenogen/0.5
+}
+researchCostMultiplier: 0.5

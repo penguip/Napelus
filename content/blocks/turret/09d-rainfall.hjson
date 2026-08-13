@@ -1,0 +1,128 @@
+type: LiquidTurret
+health: 1740
+armor: 5
+size: 3
+reload: 1.5
+inaccuracy: 6
+hasLiquids: true
+liquidCapacity: 60
+outlineColor: 2C2A36
+recoil: 2
+category: turret
+research: {
+  parent: 09c-force
+  objectives: [
+    {
+      type: OnSector
+      preset: wilderness
+    }
+  ]
+}
+researchCost: [
+  iron/3000
+  silver/1850
+  teralite/900
+]
+range: 175
+requirements: [
+  iron/110
+  silver/225
+  teralite/25
+]
+ammoTypes: {
+  ilum: {
+    despawnEffect: shootLiquid
+    hitEffect: shootLiquid
+    type: LiquidBulletType
+    liquid: ilum
+    speed: 2.5
+    lifetime: 68
+    knockback: 0.8
+    status: freezing
+    statusDuration: 325
+    damage: 1
+    layer: 98
+    puddleSize: 8
+    orbSize: 4
+    drag: 0.001
+    ammoMultiplier: 0.4
+  }
+  water: {
+    despawnEffect: shootLiquid
+    hitEffect: shootLiquid
+    type: LiquidBulletType
+    liquid: water
+    speed: 5
+    lifetime: 54
+    rangeChange: 100
+    knockback: 0.8
+    damage: 0.4
+    layer: 98
+    puddleSize: 8
+    orbSize: 4
+    drag: 0.001
+    ammoMultiplier: 0.4
+  }
+  nitrogen: {
+  type: ContinuousFlameBulletType
+  flareLength: 15
+  flareColor: D4E7FF
+  hitColor: D4E7FF
+  length: 150
+  damage: 5
+  status: nitric-frostbite
+    statusDuration: 155
+  buildingDamageMultiplier: 0.25
+  width: 2.5
+  colors: [B7D7FF, D4E7FF, FFFFFF]
+ }
+ ultraviolet: {
+  type: ContinuousFlameBulletType
+  flareLength: 10
+  flareColor: D4E7FF
+  hitColor: D4E7FF
+  length: 150
+  damage: 10
+  status: burning
+    statusDuration: 155
+  buildingDamageMultiplier: 0.25
+  width: 5
+  colors: [fc74ff6e, fc74ff6e, fc74ff6e]
+ }
+ infrared-light: {
+  type: ContinuousFlameBulletType
+  flareLength: 18
+  flareColor: FF0000
+  hitColor: FF0000
+  length: 167
+  damage: 15
+  status: melting
+    statusDuration: 155
+  buildingDamageMultiplier: 0.25
+  width: 5
+  colors: [ff00005, ff00005, ff00005]
+ }
+  liquid-nitalite: {
+    despawnEffect: shootLiquid
+    hitEffect: shootLiquid
+    type: LiquidBulletType
+    liquid: liquid-nitalite
+    speed: 4
+    lifetime: 72
+    rangeChange: 120
+    knockback: 1.2
+    damage: 5
+    layer: 98
+    collidesTeam: true
+    healPercent: 2
+    puddleSize: 8
+    orbSize: 4
+    drag: 0.001
+    ammoMultiplier: 0.4
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: rainfall-
+}
+squareSprite: false

@@ -1,0 +1,90 @@
+type: ConsumeGenerator
+size: 4
+name: Menite Thermal Reactor
+description: Requires 2 menites. Uses Ilum as a coolant and hydrogen as ignition. Uses the 2 turbines to turn it into centrifugal energy and convert to power
+squareSprite: false
+hasLiquids: true
+liquidCapacity: 155
+canOverdrive: false
+itemDuration: 135
+baseExplosiveness: 10
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+         {
+      type: DrawRegion
+      suffix: -bottom
+    }
+     {
+      type: DrawRegion
+      suffix: -turbine2
+      spinSprite: true
+      rotateSpeed: 4
+    }
+    {
+      type: DrawRegion
+      suffix: -turbine1
+      spinSprite: true
+      rotateSpeed: 8
+    }
+         {	
+        "type": "DrawDefault"
+	       }
+    ]
+    },
+consumes: {
+    "items": [
+    menite/2
+    ]
+    liquids: [
+      ilum/0.5
+      hydrogen/0.5
+    ]
+}
+generateEffectRange: 1
+effectChance: 0.015
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 4
+    lengthOffset: 6
+    effect: {
+      particles: 5
+      length: 90
+      lifetime: 350
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+powerProduction: 23
+category: power
+requirements: [
+  iron/355
+  teralite/355
+  kerenium/55
+  amalgam/45
+]
+research: {
+    parent: "06d-ingition-gen",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "snowy-river"
+        }
+    ]
+},
+researchCost: [
+  iron/800
+  teralite/755
+  kerenium/200
+  amalgam/100
+]

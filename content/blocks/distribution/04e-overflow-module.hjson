@@ -1,0 +1,14 @@
+type: OverflowGate
+size: 1
+health: 60
+requirements: [
+ silver/4
+  iron/1
+]
+category: distribution
+squareSprite: false
+research: 04a-sil-duct
+researchCost: [
+  silver/8
+  iron/2
+]

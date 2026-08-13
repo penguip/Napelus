@@ -1,0 +1,119 @@
+{
+  "name" : Carbidium Smelter,
+  "description": Same process from Erekir but with a more carbon-rich material,needs a alot of heat to work
+  "size": 3,
+  "type": "HeatCrafter",
+  "squareSprite": false
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+      type: DrawHeatInput
+      suffix: -heat
+    } 
+    {
+      type: DrawCrucibleFlame
+      flameRad: 4
+      circleSpace: 5
+      particleSize: 8
+      particleRad: 10
+      particles: 50
+    }
+      { 
+        "type": DrawDefault 
+      }
+     {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: c68f57
+    }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "buildTime": 600
+  "craftTime": 350,
+  heatRequirement: 20
+maxEfficiency: 4
+  craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+  ]
+}
+  "updateEffect": "none",
+  "consumes": {
+    "power": 2.9,
+    "items": {
+      "items": [
+        "teralite/4"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/100",
+    "iron/110",
+    "kerenium/100",
+    "amalgam/50"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01f-amalgam-forge",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "caverns"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/1000"
+    "iron/1000"
+    "teralite/2100"
+    "amalgam/550"
+] 
+  "outputItem": "carbide/4"
+    shownPlanets: [napelus]
+}
+
+
+
+
+
+

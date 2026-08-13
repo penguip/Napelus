@@ -1,0 +1,21 @@
+{
+  "name": "Large Carbide Wall"
+  "type": "Wall",
+  "description": A wall made of carbide. Protects structures from enemy projectiles
+   "buildCostMultiplier": 0.1,
+  "buildTime": 355
+  "health": 3550,
+  "size": 2,
+  "armor": 10,
+  shownPlanets: [napelus]
+  "requirements": [
+    "carbide/20"
+     kerenium/15
+  ],
+  "research": 02m-large-amalgam-wall
+  "category": defense
+  researchCost: [
+  "carbide/400"
+     kerenium/205
+]
+}

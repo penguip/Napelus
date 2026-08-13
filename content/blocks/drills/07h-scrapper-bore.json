@@ -1,0 +1,66 @@
+name: Scrapper Bore
+description: Scraps materials out from walls using lasers. Can mine Magnetite
+type: beamDrill
+health: 1555
+range: 10
+tier: 25
+size: 4
+optionalBoostIntensity: 1.5
+drillTime: 95
+ambientSound: drill
+ambientSoundVolume: 0.5
+hasLiquids: true
+sparkColor: 7A8CDC
+"buildTime": 1155
+sparks: 15
+sparkRecurrence: 25
+sparkLife: 15
+sparkSpread: 0.5
+sparkRange: 15
+consumes: {
+  liquid: xenogen/0.04000000
+  power: 0.5
+  liquids: {
+    liquids: [
+      ultraviolet/0.06
+    ]
+    optional: true
+    booster: true
+  }
+}
+buildCostMultiplier: 0.1
+category: production
+research: {
+    parent: "07f-advance-bore",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "separated"
+        }
+    ]
+},
+researchCost: [
+  iron/1950
+  kerenium/1545
+  amalgam/1200
+  carbide/855
+]
+requirements: [
+  iron/350
+  kerenium/45
+  amalgam/65
+  carbide/55
+]
+shownPlanets: [napelus]
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+name: Gamma Rays
+description: Literal gamma rays. Used in the endgames like turrets and teir 6 unit assembly. Plus they can normal pipeline so enjoy your daily dose of radiation
+gas: true
+shownPlanets: [napelus]
+temperature: 0
+heatCapacity: 0
+color: 85E5BD

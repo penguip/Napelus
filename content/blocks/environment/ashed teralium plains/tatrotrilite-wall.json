@@ -1,0 +1,9 @@
+type: StaticWall
+name: Tatro Deposit 
+description: "Contains traces of Magnesium."
+variants: 2
+itemDrop: tatrotriolite-crystal
+
+
+
+

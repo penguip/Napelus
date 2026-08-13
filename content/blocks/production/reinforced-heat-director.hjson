@@ -1,0 +1,27 @@
+type: HeatConductor
+health: 450
+size: 3
+category: crafting
+research: electric-heater
+shownPlanets: [napelus]
+requirements: [
+  iron/10
+  teralite/15
+]
+regionRotated1: 1
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+    {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+  ]
+}
+group: heat

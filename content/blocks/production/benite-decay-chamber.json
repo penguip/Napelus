@@ -1,0 +1,50 @@
+type: GenericCrafter
+name: Benite Decay Chamber
+description: Decays benite with oxygen which causes it to undergo alpha decay,releasing huge ammount of gamma rays. Extremely dangerous when standing by
+size: 3
+health: 1350
+craftTime: 100
+researchCostMultiplier: 0.5
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: oxygen
+  }
+  {
+      type: DrawCrucibleFlame
+      flameRad: 2
+      circleSpace: 1
+      particleSize: 3
+      particleRad: 5
+      particles: 5
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+consumes: {
+  liquid: oxygen/0.1
+  items: [
+    benite/1
+  ]
+}
+outputLiquid: gamma-ray/0.4
+ambientSound: loopHum
+ambientSoundVolume: 0.1
+category: crafting
+research: 01h-steel-foundary
+requirements: [
+  steel/35
+  iron/45
+  amalgam/85
+  tatrotriolite-crystal/35
+]
+group: heat

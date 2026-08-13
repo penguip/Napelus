@@ -1,0 +1,392 @@
+{
+  "type": "ItemTurret",
+  "name": Banishment,
+  "description": Shoots a volley of artillery rounds at enemies
+  "researchCostMultiplier": 0.2,
+  "size": 5,
+  "health": 3450,
+  "reload": 500,
+  "range": 400,
+  "inaccuracy": 10
+  "targetAir": false,
+  "recoil": 3,
+  "rotateSpeed": 0.7,
+  "shootSound": "shootConquer",
+  coolantMultiplier: 1.5
+  "shootWarmupSpeed": 0.01,
+  "shootY": 10
+  minWarmup: 0.4
+moveWhileCharging: false
+  ammoEjectBack: 3
+  recoilPow: 3
+  shownPlanets: [napelus]
+    shoot: {
+  type: shootPattern
+  shots: 5
+  shotDelay: 5
+}
+  drawer: {
+  type: DrawTurret
+  basePrefix: hammer-
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      heatProgress: recoil
+      moveY: -10
+      under: true
+      heatColor: 8DF9D1
+    }
+  ]
+}
+  "ammoTypes": {
+    "steel": {
+      type: ArtilleryBulletType
+    splashDamage: 550
+    splashDamageRadius: 55
+    buildingDamageMultiplier: 0.25
+    lifetime: 550
+    backColor: ffffff8a
+    frontColor: ffffff8a
+    trailWidth: 5
+    trailLength: 10
+    trailColor: ffffff8a
+    sprite: missile-large
+    speed: 9
+    width: 18
+    height: 23
+    hitEffect: titanExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    status: benite-radiated
+    statusDuration: 350
+    status: shell-breach
+    statusDuration: 60
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: ffffff8a
+      despawnColor: ffffff8a
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a,
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
+   fragOnHit: true
+      hitSound: explosionTitan
+      fragBullets: 10
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: FFFFFF
+        backColor: FFFFFF
+        trailColor: FFFFFF
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        drag: 0.0005
+        lifetime: 5
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+  }
+  "carbide": {
+      type: ArtilleryBulletType
+    splashDamage: 550
+    splashDamageRadius: 75
+    buildingDamageMultiplier: 0.25
+    lifetime: 600
+    backColor: CFA3C8
+    frontColor: CFA3C8
+    trailWidth: 5
+    trailLength: 10
+    trailColor: CFA3C8
+    speed: 7
+    width: 10
+    height: 23
+    sprite: missile-large
+    hitEffect: titanExplosion
+    hitShake: 15
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    rangeChange: 100
+    status: shell-breach
+    statusDuration: 60
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: cfa2c84e
+      despawnColor: cfa2c84e
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
+      fragBullets: 2
+      fragBullet: {
+        type: ArtilleryBulletType
+        buildingDamageMultiplier: 0.25
+        drag: 0.02
+        hitEffect: massiveExplosion
+        despawnEffect: scatheSlash
+        damage: 25
+        status: shocked
+        knockback: 1
+        lifetime: 80
+        width: 18
+        height: 18
+        collidesTiles: false
+        splashDamage: 120
+        splashDamageRadius: 30
+        backColor: CFA3C8
+        trailColor: CFA3C8
+        hitColor: CFA3C8
+        lightColor: CFA3C8
+        frontColor: CFA3C8
+        smokeEffect: shootBigSmoke2
+        despawnShake: 10
+        lightRadius: 30
+        lightOpacity: 0.65
+      }
+  }
+  "amalgam": {
+      type: ArtilleryBulletType
+    splashDamage: 350
+    splashDamageRadius: 110
+    buildingDamageMultiplier: 0.25
+    sprite: missile-large
+    lifetime: 550
+    backColor: EFC47F
+    frontColor: EFC47F
+    trailWidth: 5
+    trailLength: 10
+    trailColor: EFC47F
+    speed: 6
+    width: 18
+    height: 23
+    hitEffect: titanExplosion
+    hitShake: 15
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    rangeChange: -35
+    status: shell-breach
+    statusDuration: 120
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: cfa2c84e
+      despawnColor: cfa2c84e
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "EFC47F",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "EFC47F",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "EFC47F",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "EFC47F",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "EFC47F",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "EFC47F",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
+      fragBullets: 10
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "speed": 5,
+        "trailColor": "EFC47F",
+        "trailParam": 10,
+        "trailLength": 10,
+         sprite: missile-large
+        "trailWidth": 3,
+        "buildingDamageMultiplier": 0.3,
+        "lifetime": 35,
+        "damage": 175,
+        "homingRange": 200,
+        "homingPower": 0.09,
+        "height": 12,
+        "width": 10,
+        "hitEffect": "thoriumShoot",
+        "despawnEffect": "thoriumShoot",
+        "pierce": true,
+        "frontColor": "EFC47F",
+        "backColor": "EFC47F"
+      }
+  }
+}
+  "requirements": [
+    "iron/500",
+    "kerenium/150",
+    "benite/130"
+    "carbide/100"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.450
+  },
+  "category": "turret",
+  research: {
+    parent: "09d-hammer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "caverns"
+        }
+    ]
+},
+}

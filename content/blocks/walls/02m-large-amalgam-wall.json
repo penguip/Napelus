@@ -1,0 +1,31 @@
+{
+  "name": Large Amalgam Wall"
+  "description": A wall made from Amalgam. Capable of refelcting bullets and releases lightning on impact
+  "type": "Wall",
+  "buildCostMultiplier": 0.1,
+  "buildTime": 710
+  "health": 3150,
+  chanceDeflect: 7
+  "size": 2,
+  "armor": 15,
+  lightningChance: 0.25
+lightningDamage: 35
+lightningColor: 92cfb8
+  shownPlanets: [napelus,Stella]
+  "requirements": [
+    "amalgam/15"
+     iron/10
+  ],
+  "research": 02m-amalgam-wall
+ objectives: [
+        {
+            type: "OnSector",
+            preset: "snow-storm-base"
+        }
+    ]
+  researchCost: [
+  amalgam/255
+  iron/100
+]
+  "category": defense
+}

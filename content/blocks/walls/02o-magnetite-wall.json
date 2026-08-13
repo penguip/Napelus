@@ -1,0 +1,26 @@
+{
+  "name": "Magnetite Wall"
+  "type": "ShieldWall",
+  "description": A wall made of magnetite. Protects structures from enemy projectiles and produce a shield
+   "buildCostMultiplier": 0.1,
+  "health": 2500,
+  "size": 1,
+  "armor": 7,
+  shownPlanets: [napelus]
+  hasPower: true
+conductivePower: true
+shieldHealth: 350
+consumes: {
+  power: 0.1
+}
+  "requirements": [
+    "magnetite/15"
+     iron/10
+  ],
+  "research": 02m-large-amalgam-wall
+  "category": defense
+  researchCost: [
+  "magnetite/45"
+     iron/35
+]
+}

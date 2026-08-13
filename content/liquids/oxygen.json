@@ -1,0 +1,7 @@
+name: Oxygen
+description: Hmmmm oxygen. Used as a better oxidizer in oxidizing benite and advanced power production. Probably breathable 
+gas: true
+shownPlanets: [napelus]
+temperature: 0
+heatCapacity: 0
+color: A7B8EF

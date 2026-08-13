@@ -1,0 +1,19 @@
+type: ItemBridge
+size: 1
+health: 300
+range: 10
+pulse: true
+transportTime: 2
+arrowPeriod: 0.9
+arrowTimeScl: 2.75
+requirements: [
+  iron/10
+  amalgam/5
+]
+category: distribution
+squareSprite: false
+research: 04d-sil-duct-bridge
+researchCost: [
+  iron/500
+  amalgam/75
+]

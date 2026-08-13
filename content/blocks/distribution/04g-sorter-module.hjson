@@ -1,0 +1,15 @@
+type: DuctRouter
+regionRotated1: 1
+size: 1
+health: 65
+requirements: [
+  silver/20
+  iron/10
+]
+category: distribution
+squareSprite: false
+research: 04b-sil-duct-router
+researchCost: [
+  silver/40
+  iron/20
+]

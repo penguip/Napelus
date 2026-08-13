@@ -1,0 +1,75 @@
+type: Pump
+name: Liquid Extractor
+description: Pumps liquid from liquid tiles.
+size: 3
+category: liquid
+squareSprite: false
+research: 06d-liquid-pump
+warmupSpeed: 0.009
+requirements: [
+  silver/25
+  teralite/20
+  kerenium/10
+]
+pumpAmount: 0.13
+researchCostMultiplier: 0.5
+shownPlanets: [napelus,Stella]
+liquidCapacity: 120
+consumes: {
+  power: 1
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+  	    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: liquid-nitalite
+      padLeft: 1.5
+      padBottom: 1.5
+      padTop: 1.5
+      padRight: 1.5
+    }
+	{
+      type: DrawLiquidTile
+      drawLiquid: water
+      padLeft: 1.5
+      padBottom: 1.5
+      padTop: 1.5
+      padRight: 1.5
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotateSpeed: 8.5
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      rotateSpeed: 8.5
+      spinSprite: true
+      rotation: 45
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

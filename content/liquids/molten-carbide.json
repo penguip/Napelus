@@ -1,0 +1,17 @@
+boilPoint: 15
+name: Molten Carbide
+description: Superheated carbide into a liquid form. Used only in reinforced carbide production
+heatCapacity: 5
+shownPlanets: [napelus]
+temperature: 2
+color: 8D739E
+research: {
+  parent: ilum 
+  objectives: [
+    exlium 
+    {
+      type: OnComplete
+      preset: outpost
+    }
+  ]
+}

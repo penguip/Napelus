@@ -1,0 +1,18 @@
+type: PowerNode
+fogRadius: 2
+laserRange: 50
+health: 250
+maxNodes: 2
+size: 3
+squareSprite: false
+researchCostMultiplier: 0.5
+category: power
+research: 06b-advance-laser-node
+requirements: [
+  iron/125
+  teralite/25
+  amalgam/25
+]
+laserScale: 1
+laserColor1: FFFFFF
+laserColor2: 7EA1D0

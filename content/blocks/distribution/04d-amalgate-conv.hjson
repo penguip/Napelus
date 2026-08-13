@@ -1,0 +1,27 @@
+type: StackConveyor
+speed: 0.055
+itemCapacity: 25
+name: Amalgam Hoverbelt
+description: Fabricate hover pods and transport stacked items. Can conduct power
+health: 200
+outputRouter: false
+hasPower: true
+consumesPower: true
+conductivePower: true
+category: distribution
+research: 04c-kerenite-ducts
+requirements: [
+  iron/2
+  amalgam/1
+]   
+researchCost: [
+  iron/350
+  amalgam/35
+]
+consumes: {
+  power: 0.0833333333333333
+}
+baseEfficiency: 1
+underBullets: true
+solid: false
+squareSprite: false

@@ -1,0 +1,118 @@
+{
+  "name" : Tatro Crystallization Chamber,
+  "description": Uses intense heat,teralite,carbon and natalite to produce the tatro crystal first discovered after the weapon testing with sin
+  "size": 3,
+  "type": "HeatCrafter",
+  "squareSprite": false
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+      type: DrawHeatInput
+      suffix: -heat
+    } 
+    {
+      type: DrawCrucibleFlame
+      flameRad: 4
+      circleSpace: 5
+      particleSize: 8
+      particleRad: 10
+      particles: 50
+    }
+      { 
+        "type": DrawDefault 
+      }
+     {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: c68f57
+    }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 25,
+  "craftTime": 550,
+  heatRequirement: 55
+maxEfficiency: 4
+  craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+  ]
+}
+  "updateEffect": "none",
+  "consumes": {
+    "power": 4.5,
+    liquids: [
+    liquid-nitalite/1.5
+  ]
+    "items": {
+      "items": [
+        "teralite/5"
+        "carbon/10"
+      ]
+    }
+  },
+  "requirements": [
+    "steel/200",
+    "iron/240",
+    "amalgam/125"
+    "carbide/100"
+    "kerenium/250"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01h-steel-foundary",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "caverns"
+        }
+    ]
+},
+  "researchCost": [
+    "steel/1000",
+    "iron/4500",
+    "amalgam/2500"
+    "carbide/3000"
+    "kerenium/2000"
+] 
+  "outputItem": "tatrotriolite-crystal/5"
+    shownPlanets: [napelus]
+}

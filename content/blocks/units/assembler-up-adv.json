@@ -1,0 +1,17 @@
+type: UnitAssemblerModule
+name: Advance Assembly Upgrader Module
+size: 4
+health: 2000
+category: units
+research: assembler-up
+requirements: [
+  steel/65
+  amalgam/185
+  carbide/155
+  tatrotriolite-crystal/65
+]
+consumes: {
+  power: 1
+}
+tier: 2
+researchCostMultiplier: 0.5

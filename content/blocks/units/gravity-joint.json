@@ -1,0 +1,14 @@
+type: Junction
+size: 4
+customShadow: true
+placeablePlayer: false
+"buildTime": 1100
+requirements: [
+  steel/55
+  magnetite/65
+  iron/25
+  tatrotriolite-crystal/35
+]
+research: 10k-unit-reformer
+researchCostMultiplier: 1
+

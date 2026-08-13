@@ -1,0 +1,66 @@
+name: m-bomb-launcher
+    x: -18
+    y: -1
+    rotate: false
+    mirror: false
+    alternate: true
+    layerOffset: -0.01
+    rotateSpeed: 5
+    reload: 750
+rotationLimit: 20
+shootCone: 50
+shootSound: railgun
+recoil: 3
+ top: false
+parts: [
+    {
+    type: RegionPart,
+    suffix: -armr
+    under: true
+    mirror: false,
+    moveRot: -2,
+    moveX: 1,
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: -6
+   }
+   ]
+   progress: warmup
+   }
+   {
+    type: RegionPart,
+    suffix: -arml
+    top: false
+    under: true
+    mirror: false,
+    moveRot: 2,
+    moveX: -1,
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: -6
+   }
+   ]
+   progress: warmup
+   }
+   {
+  type: FlarePart
+  color1: EFC47F
+  color2: EFC47F
+  y: 10
+  followRotation: true
+  stroke: 2
+  radius: 20
+  spinSpeed: 0.5
+  moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    moveY: -5
+   }
+   ]
+}
+   ]

@@ -1,0 +1,25 @@
+{
+  "name": "Steel Wall"
+  "description": A wall made from steel. The most durable wall 
+  "type": "Wall",
+  "buildCostMultiplier": 0.1,
+  "health": 2950,
+  "buildTime": 450
+  "size": 1,
+  "armor": 15,
+  shownPlanets: [napelus,Stella]
+  "requirements": [
+    "steel/5"
+  ],
+  "research": 02b-large-silver-wall 
+ objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+  researchCost: [
+  steel/15
+]
+  "category": defense
+}

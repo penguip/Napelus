@@ -1,0 +1,156 @@
+type: LiquidTurret
+health: 3450
+armor: 15
+size: 4
+reload: 25
+heatRequirement: 15
+maxHeatEfficiency: 10
+inaccuracy: 6
+hasLiquids: true
+liquidCapacity: 60
+outlineColor: 2c2a36
+recoil: 4
+recoils: 2
+category: turret
+shootSound: shootSpectre
+shoot: {
+  type: ShootAlternate 
+  spread: 7
+  shotDelay: 10
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: gala-
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrelL
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelR
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 1
+    }
+  ]
+}
+research: {
+  parent: 09i-veil
+  objectives: [
+    {
+      type: OnSector
+      preset: wilderness
+    }
+  ]
+}
+researchCost: [
+  iron/1550
+  amalgam/550
+  magnesium/1340
+  carbide/155
+]
+range: 175
+requirements: [
+  iron/550
+  amalgam/35
+  magnesium/100
+  carbide/45
+]
+ammoTypes: {
+ ultraviolet: {
+  type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.1
+    hitColor: FC74FF
+    backColor: FC74FF
+    frontColor: FC74FF
+    lightColor: FC74FF
+    damage: 25
+    speed: 7
+    lifetime: 40
+    weaveMag: 5
+    weaveScale: 3.5
+    "homingRange": 200,
+        "homingPower": 0.02,
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: FC74FF
+        colorTo: FC74FF
+    }
+    ]
+    pierceCap: 7
+    pierce: true
+    pierceBuilding: true  
+    trailColor: FC74FF
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+    nitrogen: {
+  type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.1
+    hitColor: D4E7FF
+    backColor: D4E7FF
+    frontColor: D4E7FF
+    lightColor: D4E7FF
+    damage: 15
+    status: nitric-frostbite
+    statusDuration: 15
+    speed: 7
+    lifetime: 55
+    drag: 0.03
+    "homingRange": 200,
+        "homingPower": 0.02,
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: D4E7FF
+        colorTo: D4E7FF
+    }
+    ]
+    pierceCap: 7
+    pierce: true
+    pierceBuilding: true  
+    trailColor: D4E7FF
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+}
+squareSprite: false

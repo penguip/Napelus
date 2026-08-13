@@ -1,0 +1,84 @@
+type: HeaterGenerator
+size: 5
+maxHeat: 30
+heatOutput: 55
+category: power
+squareSprite: false
+requirements: [
+  silver/750
+  teralite/750
+  iron/650
+  amalgam/400
+  carbide/255
+  magnetite/500
+]
+consumes: {
+  items: {
+  items: [
+  benite/1
+  ]
+  }
+  liquids: [
+ 	hydrogen/0.5
+        xenogen/0.5
+  ]
+}
+"outputLiquid": molten-depleted-benite/0.5
+itemDuration: 180
+powerProduction: 155
+ambientSound: loopSmelter
+ambientSoundVolume: 0.03
+hasLiquids: true
+hasPower: true
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: hydrogen
+      alpha: 1
+      padding: 3
+    } 
+    {
+      type: DrawPlasma
+	  plasmas: 3
+	  plasma1: 97FFB3
+	  plasma2: 97FFB3
+	  plasma3: 97FFB3
+    }
+    {
+      type: DrawDefault
+    }
+    {
+	  type: DrawGlowRegion
+	  alpha: 1
+	  glowIntensity: 0.6
+	  color: 97FFB3
+	  suffix: -glow
+	  glowScale: 12
+	}
+  ]
+}
+
+
+research: {
+	parent: 06f-hydro-oxy-combustion-cham
+	objectives: [
+		hydrogen
+	]
+} 
+researchCost: [
+	silver/1350
+  teralite/1300
+  iron/1100
+  amalgam/970
+  carbide/1100
+  magnetite/1200
+]
+	

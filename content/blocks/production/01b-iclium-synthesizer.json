@@ -1,0 +1,86 @@
+type: GenericCrafter
+size: 3
+health: 450
+craftTime: 35
+liquidCapacity: 120
+hasLiquids: true
+lightLiquid: ilum
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 2
+    drawLiquid: exlium
+  }
+  {
+    type: DrawBubbles
+    color: 9B9BCC
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 24
+  }
+  {
+    type: DrawLiquidTile
+    padding: 2
+    drawLiquid: ilum
+  }
+  {
+    type: DrawBubbles
+    color: D6DDFF
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 12
+  }
+  {
+      type: DrawRegion
+      suffix: -mixer
+      spinSprite: true
+      rotateSpeed: 4
+    }
+  {
+    type: DrawRegion
+  }
+]
+consumes: {
+  items: [
+  iclium/4
+  silver/1
+  ]
+  liquids: [
+    exlium/0.5
+  ]
+  power: 0.7
+}
+outputLiquid: ilum/0.5
+category: crafting
+requirements: [
+  silver/55
+  iron/75
+  teralite/55
+  magnesium/66
+]
+ambientSound: loopCultivator
+ambientSoundVolume: 0.085
+squareSprite: false
+research: {
+  parent: 01b-iclium-liquidizer
+  objectives: [
+    {
+      type: OnSector
+      preset: river-base
+    }
+  ]
+}
+researchCost: [
+  silver/150
+  iron/155
+  teralite/150
+  magnesium/100
+]

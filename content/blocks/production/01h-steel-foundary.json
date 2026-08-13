@@ -1,0 +1,118 @@
+{
+  "name" : Steel Foundary,
+  "description": Creates steel by melting iron and carbide from a different block. Needs nitrogen and ilum to cool down the foundary. Hydrogen is also needed
+  "size": 4,
+  "type": "HeatCrafter",
+  "squareSprite": false
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+      type: DrawHeatInput
+      suffix: -heat
+    } 
+    {
+      type: DrawCrucibleFlame
+      flameRad: 4
+      circleSpace: 5
+      particleSize: 8
+      particleRad: 10
+      particles: 50
+    }
+      { 
+        "type": DrawDefault 
+      }
+     {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: c68f57
+    }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 15,
+  "craftTime": 455,
+  heatRequirement: 30
+maxEfficiency: 2
+  craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 45
+      lengthOffset: 8
+      effect: surgeCruciSmoke
+    }
+  ]
+}
+  "updateEffect": "none",
+  "consumes": {
+    "power": 3.5,
+    liquids: [
+    ilum/0.6
+    hydrogen/0.3
+    nitrogen/0.5
+  ]
+    "items": {
+      "items": [
+        "iron/4"
+        "carbon/4"
+      ]
+    }
+  },
+  "requirements": [
+    "iron/135",
+    "kerenium/140",
+    "amalgam/50"
+    "carbide/55"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01a2-iron-heavy-ref",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "caverns"
+        }
+    ]
+},
+  "researchCost": [
+    "iron/1550",
+    "kerenium/650",
+    "amalgam/550"
+    "carbide/450"
+] 
+  "outputItem": "steel/4"
+    shownPlanets: [napelus]
+}

@@ -1,0 +1,9 @@
+boilPoint: -15
+name: Molten Depleted Benite
+description: A molten form of depleted benite. Can be cooled into a solid depleted benite
+heatCapacity: 102
+shownPlanets: [napelus]
+color: 97FFB3
+research: {
+  parent: exlium 
+}

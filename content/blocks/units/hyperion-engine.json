@@ -1,0 +1,13 @@
+type: Junction
+size: 4
+customShadow: true
+placeablePlayer: false
+"buildTime": 1350
+requirements: [
+  steel/35
+  magnetite/55
+  tatrotriolite-crystal/25
+]
+research: charged-engine
+researchCostMultiplier: 1
+

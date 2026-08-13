@@ -1,0 +1,6 @@
+"type": "StaticWall",
+"name": Britle Carbon Wall
+"variants": 2,
+attributes: {
+  carbon: 1
+}

@@ -1,0 +1,106 @@
+type: VariableReactor
+size: 5
+category: power
+squareSprite: false
+requirements: [
+  teralite/950
+  steel/1100
+  amalgam/750
+  carbide/450
+  magnetite/550
+]
+consumes: {
+  items: {
+  items: [
+  magnetite/1
+  ]
+  }
+  liquids: [
+ 	hydrogen/0.5
+        nitrogen/0.5
+        xenogen/0.5
+        ozone/0.5
+  ]
+}
+itemDuration: 180
+powerProduction: 165
+ambientSound: loopSmelter
+ambientSoundVolume: 0.03
+hasLiquids: true
+hasPower: true
+maxHeat: 15
+explodeSound: explosionReactor
+explosionRadius: 22
+explosionDamage: 2200
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+   {
+      type: DrawLiquidRegion
+      drawLiquid: hydrogen
+      suffix: -hydrogen
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: nitrogen
+      suffix: -nitrogen
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: xenogen
+      suffix: -xenogen
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ozone
+      suffix: -ozone
+    }
+    {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "656462"
+        "flameRadiusScl": 1
+        "circleStroke": 0
+        "flameRad": 10
+        "particleRad": 10
+      }
+    {
+      type: DrawDefault
+    }
+    {
+	  type: DrawGlowRegion
+	  alpha: 1
+	  glowIntensity: 0.6
+	  color: 8365D6
+	  suffix: -glow
+	  glowScale: 15
+	}
+  ]
+}
+
+
+research: {
+	parent: 06i-benite-fission-reactor
+	objectives: [
+		hydrogen
+	]
+} 
+researchCost: [
+  teralite/1300
+  steel/1100
+  amalgam/970
+  carbide/1100
+  magnetite/1200
+]
+
+
+
+
+
+
+
+
+	

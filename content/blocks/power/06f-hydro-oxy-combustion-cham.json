@@ -1,0 +1,71 @@
+type: HeaterGenerator
+size: 3
+name: Hydro-oxy Combustion Chamber
+description: Combines Hydrogen and Oxygen to create a lot of power. Produce water and high ammount of heat as a byproduct
+squareSprite: false
+hasLiquids: true
+liquidCapacity: 60
+canOverdrive: false
+heatOutput: 25
+rotate: true
+baseExplosiveness: 3
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+      {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: hydrogen
+      padding: 4.5
+      alpha: 1
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: oxygen
+      padding: 1
+      alpha: 1
+    }
+      {	
+        "type": "DrawDefault"
+	       }
+      {
+      type: DrawHeatOutput
+    }
+    ]
+    },
+consumes: {
+    liquids: [
+      oxygen/0.2
+      hydrogen/0.2
+    ]
+}
+outputLiquid: water/0.7
+generateEffectRange: 1
+effectChance: 0.1
+generateEffect: none
+powerProduction: 18
+category: power
+requirements: [
+  silver/345
+  iron/454
+  teralite/400
+  magnesium/450
+]
+research: {
+    parent: "06b-laser-node",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "snowy-river"
+        }
+    ]
+},
+researchCost: [
+ silver/345
+  iron/454
+  teralite/400
+  magnesium/450
+]

@@ -1,0 +1,36 @@
+type: ForceProjector
+size: 3
+health: 1650
+sides: 5
+radius: 150
+shieldRotation: 45
+shieldHealth: 855
+cooldownNormal: 0.5
+cooldownLiquid: 1.2
+cooldownBrokenBase: 1.25
+category: effect
+squareSprite: false
+research: {
+  parent: nitro-regenerator
+  objectives: [
+    {
+      type: OnSector
+      preset: snow-storm-base
+    }
+  ]
+}
+requirements: [
+  silver/155
+  magnesium/80
+  iron/100
+  teralite/110
+  kerenium/55
+]
+consumes: {
+  power: 4
+  liquids: [
+  nitrogen/0.08333333333
+  ]
+}
+armor: 10
+researchCostMultiplier: 0.5

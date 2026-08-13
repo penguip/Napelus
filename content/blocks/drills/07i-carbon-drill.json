@@ -1,0 +1,41 @@
+type: WallCrafter
+name: Carbon Driller
+description: Crushes carbon from britle carbon walls
+health: 250
+size: 3
+category: production
+drawers: [
+      {
+       type: DrawDefault 
+      }
+  ]
+research: {
+    parent: "07b-iclium-driller",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+consumes: {
+  power: 0.3
+}
+requirements: [
+  iron/65
+  teralite/10
+  amalgam/15
+  carbide/10
+]
+researchCost: [
+  iron/250
+  teralite/345
+  amalgam/350
+  carbide/85
+]
+drillTime: 75
+output: carbon
+attribute: carbon
+ambientSound: drill
+ambientSoundVolume: 0.1
+fogRadius: 1

@@ -1,0 +1,83 @@
+{
+  "size": 4,
+  "type": "HeatCrafter",
+  heatRequirement: 15
+maxEfficiency: 4
+  squareSprite: false
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+    {
+      "type": "DrawGlowRegion"
+        suffix: -glow
+        }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 4
+      circleSpace: 1
+      particleSize: 2.5
+    }
+    {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+      { 
+        "type": DrawDefault 
+      }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 20,
+  "craftTime": 135,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 0,
+    "lifetime": 50,
+    "length": 25,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "7A8CDC",
+    "colorTo": "FFFFFFF"
+  },
+  "updateEffect": "none",
+  "consumes": {
+    "power": 0.7,
+    "items": {
+      "items": [
+        "magnesium/5"
+        "silver/5"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/95",
+    "iron/85",
+    "teralite/90"
+    "kerenium/55"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01c-menite-infuser",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "wilderness"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/5000"
+    "iron/2000"
+    "teralite/3500"
+    "kerenium/1000"
+] 
+  "outputItem": "menite/5"
+    shownPlanets: [napelus]
+}

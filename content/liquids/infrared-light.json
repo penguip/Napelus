@@ -1,0 +1,7 @@
+name: Infrared Lights
+description: Also comes from Staria and heats from molten things, cant priece pipelines since it is blocked by silver,kerenium and steel. Plus,its hot
+gas: true
+shownPlanets: [napelus]
+temperature: 0
+heatCapacity: 0
+color: FF0000

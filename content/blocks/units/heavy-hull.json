@@ -1,0 +1,12 @@
+type: Junction
+size: 3
+customShadow: true
+placeablePlayer: false
+requirements: [
+  silver/45
+  iron/25
+  carbide/45
+  kerenium/40
+]
+research: 10k-unit-reformer
+researchCostMultiplier: 1

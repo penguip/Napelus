@@ -1,0 +1,21 @@
+{
+  "name": "Large Kerenium Wall"
+  "type": "Wall",
+  "description": A wall made of kerenium. Has no special purpose other than protecting structures
+   "buildCostMultiplier": 0.1,
+  "buildTime": 750
+  "health": 3000,
+  "size": 2,
+  "armor": 15,
+  shownPlanets: [napelus]
+  "requirements": [
+    "kerenium/25",
+    "iron/15"
+  ],
+  "research": 02i-be-wall 
+  "category": defense
+  researchCost: [
+  kerenium/655
+  iron/455
+]
+}

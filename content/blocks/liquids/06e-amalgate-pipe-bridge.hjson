@@ -1,0 +1,20 @@
+type: LiquidBridge
+size: 1
+health: 300
+canOverdrive: false
+range: 10
+pulse: true
+transportTime: 2
+arrowPeriod: 0.9
+arrowTimeScl: 2.75
+requirements: [
+  iron/5
+  amalgam/4
+]
+category: liquid
+squareSprite: false
+research: 06ab-liquid-bridge
+researchCost: [
+  iron/355
+  amalgam/75
+]

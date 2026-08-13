@@ -1,0 +1,27 @@
+{
+  "name": "Large Magnetite Wall"
+  "type": "ShieldWall",
+  "description": A wall made of magnetite. Protects structures from enemy projectiles and produce a shield
+   "buildCostMultiplier": 0.1,
+  "buildTime": 500
+  "health": 3950,
+  "size": 2,
+  "armor": 15
+  hasPower: true
+conductivePower: true
+shieldHealth: 550
+  shownPlanets: [napelus]
+  "requirements": [
+     "magnetite/45"
+     iron/35
+  ],
+  "research": 02o-magnetite-wall-small
+  "category": defense
+  consumes: {
+  power: 0.2
+}
+  researchCost: [
+  "magnetite/150"
+     iron/110
+]
+}

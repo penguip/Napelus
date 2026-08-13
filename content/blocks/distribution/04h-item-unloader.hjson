@@ -1,0 +1,18 @@
+type: DirectionalUnloader
+size: 1
+health: 100
+category: distribution
+research: 04g-sorter-module
+requirements: [
+  iron/20
+  teralite/40
+]
+speed: 4
+solid: false
+underBullets: true
+regionRotated1: 1
+allowCoreUnload: false
+researchCost: [
+  iron/40
+  teralite/80
+]

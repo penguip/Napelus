@@ -1,0 +1,10 @@
+name: Tatro Cystal
+description: Full name is Tatrotriolite Crystal. Formed from intense heat of Sin or extreme heat by heating it with natalite
+charge: 5
+hardness: 15
+research: graphite
+healthScaling: 0.9
+radioactivity: 0
+frames: 10
+frameTime: 4
+shownPlanets: [napelus]

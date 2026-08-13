@@ -1,0 +1,18 @@
+type: UnitCargoUnloadPoint
+health: 450
+itemCapacity: 100
+size: 2
+category: distribution
+research: transportation-drone-pad
+requirements: [
+  silver/55
+  iron/90
+  teralite/55
+  kerenium/10
+]
+researchCost: [
+  silver/550
+  iron/300
+  teralite/550
+  kerenium/100
+]

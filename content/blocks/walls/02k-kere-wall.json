@@ -1,0 +1,21 @@
+{
+  "name": "Kerenium Wall"
+  "type": "Wall",
+  "description": A wall made of kerenium. Larger and more armored.
+   "buildCostMultiplier": 0.1,
+  "buildTime": 750
+  "health": 1350,
+  "size": 1,
+  "armor": 11,
+  shownPlanets: [napelus]
+  "requirements": [
+    "kerenium/20",
+    "iron/10"
+  ],
+  "research": 02i-be-wall 
+  "category": defense
+  researchCost: [
+  kerenium/500
+  iron/500
+]
+}

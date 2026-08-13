@@ -1,0 +1,36 @@
+type: HeatProducer
+name: Infrared Heater
+description: Uses infrared light and converts it into heat
+size: 3
+heatOutput: 30
+health: 1335
+craftTime: 120
+researchCostMultiplier: 0.5
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+  }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  liquid: infrared-light/0.5
+}
+ambientSound: loopHum
+ambientSoundVolume: 0.1
+category: crafting
+research: hydrogen-infusion-heater
+requirements: [
+  iron/100
+  amalgam/25
+  carbide/15
+]
+group: heat

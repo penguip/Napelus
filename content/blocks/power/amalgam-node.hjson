@@ -1,0 +1,22 @@
+type: PowerNode
+fogRadius: 2
+size: 2
+health: 330
+squareSprite: false
+laserRange: 15
+maxNodes: 18
+category: power
+laserScale: 0.6
+laserColor1: FFDD8E
+laserColor2: 968154
+requirements: [
+  amalgam/35
+  kerenium/15
+  iron/15
+]
+
+
+
+
+
+

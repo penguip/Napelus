@@ -1,0 +1,22 @@
+type: RepairTower
+name: Ozonic Unit Mender
+description: A modified unit mender and heals unit in a specific radius. Requires ozone 
+size: 3
+health: 750
+squareSprite: false
+category: units
+requirements: [
+  silver/80
+  iron/60
+  teralite/60
+]
+circleColor: FBC7D2
+glowColor: FBC7D2
+research: 10a-blade-fabricator
+range: 100
+healAmount: 1.5
+consumes: {
+  power: 2
+  liquid: ozone/0.2
+}
+researchCostMultiplier: 0.5

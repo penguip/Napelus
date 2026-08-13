@@ -1,0 +1,19 @@
+{
+  "name": nitric fissure
+  "type": "Floor",
+  "variants": 2
+  "wall": "snowy-wall"
+  emitLight: true
+lightRadius: 20
+lightColor: c7f0ff71
+ attributes: {
+ nitric: 0.3
+ }
+}
+
+
+
+
+
+
+

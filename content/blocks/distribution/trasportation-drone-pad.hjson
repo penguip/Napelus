@@ -1,0 +1,26 @@
+type: UnitCargoLoader
+size: 3
+health: 1000
+unitType: harpe
+buildTime: 600
+consumes: {
+  power: 6
+  liquid: ilum/0.5
+}
+polyColor: c5a381
+polyRadius: 8
+itemCapacity: 200
+category: distribution
+requirements: [
+  silver/110
+  iron/130
+  teralite/35
+  kerenium/55
+]
+research: item-launcher
+researchCost: [
+  silver/1100
+  iron/1300
+  teralite/1550
+  kerenium/550
+]

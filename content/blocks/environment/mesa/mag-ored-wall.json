@@ -1,0 +1,5 @@
+type: StaticWall
+name: Magnetite Deposit 
+description: "Contains traces of Magnetite."
+variants: 2
+itemDrop: magnetite

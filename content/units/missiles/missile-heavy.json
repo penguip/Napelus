@@ -1,0 +1,150 @@
+type: missile
+controller: MissileAI
+flying: true
+speed: 4
+maxRange: 9
+lifetime: 390
+hidden: true
+envEnabled: 17
+envDisabled: 0
+outlineColor: 2d2f39
+autoFindTarget: true
+engineColor: CFA2CA
+trailColor: CFA2CA
+engineSize: 3.5
+engineOffset: 10
+rotateSpeed: 0.3
+trailLength: 20
+missileAccelTime: 50
+lowAltitude: true
+fogRadius: 6
+health: 1000
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+abilities: [
+  {
+              type: MoveEffectAbility
+              y: -8
+              effect: [
+              {
+              type: ParticleEffect
+              particles: 20
+              lifetime: 30
+              length: 12
+              sizeFrom: 5
+              sizeTo: 1
+              colorFrom: CFA2CA
+              colorTo: CFA2CA
+              strokeFrom: 10
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              }
+              ]
+              }
+              ]
+weapons: [
+    {
+        name: skyhook-launch
+        shootCone: 360
+          mirror: false
+          reload: 180
+          shootOnDeath: true
+          shootEffect: none
+          x: 0
+          y: 0
+          shake: 55
+    despawnExplosionEffect: massiveExplosion
+    bullet: {
+      type: ExplosionBulletType
+      status: blasted
+      splashDamage: 2000
+      buildingDamageMultiplier: 0.5
+      splashDamageRadius: 100
+      despawnEffect: scatheExplosion
+      fragLifeMin: 0.1
+      collidesAir: false
+      buildingDamageMultiplier: 0.25
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "CFA2CA",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA2CA",
+              "colorTo": "cfa2ca4e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA2CA",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA2CA",
+              "colorTo": "cfa2ca4e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 50,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA2CA",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA2CA",
+              "colorTo": "cfa2ca4e",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+          {
+              "type": "WaveEffect",
+              "lifetime": 100,
+              "sizeFrom": 20,
+              "sizeTo": 200,
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "lightColor": "CFA2CA",
+              "colorFrom": "CFA2CA",
+              "colorTo": "CFA2CA"
+            }
+            {
+              "type": "WaveEffect",
+              "lifetime": 100,
+              "sizeFrom": 20,
+              "sizeTo": 100,
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "lightColor": "CFA2CA",
+              "colorFrom": "CFA2CA",
+              "colorTo": "CFA2CA"
+            }
+         ]
+      }
+    }
+  }
+]

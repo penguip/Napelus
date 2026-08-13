@@ -1,0 +1,92 @@
+type: CoreBlock
+size: 3
+health: 5500
+armor: 5
+unitType: railux
+requirements: [
+ silver/500
+ iron/500
+]
+requiresCoreZone: true
+incinerateNonBuildable: true
+category: effect
+isFirstTier: true
+squareSprite: false
+alwaysUnlocked: true
+itemCapacity: 0
+unitCapModifier: 0
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
+  
+   
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

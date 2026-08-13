@@ -1,0 +1,25 @@
+type: LandingPad
+requirements: [
+ iron/300
+ benite/155
+ kerenium/100
+]
+size: 4
+health: 2350
+category: effect
+squareSprite: false
+itemCapacity: 150
+liquidCapacity: 55
+coolingEffect: {
+  type: RadialEffect
+  effect: steamCoolSmoke
+  amount: 4
+  rotationSpacing: 90
+  lengthOffset: 9.5
+  effectRotationOffset: 180
+}
+bottomColor: 4b495a
+consumeLiquid: nylin
+consumeLiquidAmount: 45
+buildVisibility: notLegacyLaunchPadOnly
+

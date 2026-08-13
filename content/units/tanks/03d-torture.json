@@ -1,0 +1,262 @@
+type: tank
+hitSize: 35
+name: Torture
+databaseTag: tank
+description: A heavy tank with a minature gala. Slow but destructive
+singleTarget: false
+omniMovement: false
+faceTarget: false
+targetAir: true
+shownPlanets: [napelus]
+health: 9565
+armor: 25
+speed: 0.5
+rotateSpeed: 1
+itemCapacity: 0
+outlineColor: 26262F
+crushDamage: 0.5
+research: {
+    parent: "1-10g-tank-fab",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+treadRects: [
+    {
+        x: -45,
+        y: -85,
+        width: 30,
+        height: 159
+    }
+    {
+        x: 14,
+        y: -84,
+        width: 32,
+        height: 158
+    }
+]
+researchCostMultiplier: 1
+weapons: [
+{
+    "name": "torture-machine-gun",
+    "reload": 25,
+    "mirror": true,
+    "x": 14,
+    "y": 14,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+    "rotateSpeed": 2.5
+    shootSound: shootStell
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 45
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+  {
+    "name": "torture-machine-gun",
+    "reload": 25,
+    "mirror": true,
+    "x": 14,
+    "y": -13,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+    "rotateSpeed": 2.5
+    shootSound: shootStell
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 45
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+  {
+    "name": "torture-gala",
+    "reload": 145,
+    "mirror": false,
+    "x": 0,
+    "y": 2,
+    "shootY": 2,
+    "recoil": 1,
+    "recoils": 5
+    "rotateSpeed": 0.5
+    "rotate": true,
+     layerOffset: 0.01
+"shoot": {
+        "type": "ShootMulti",
+          "type": "ShootAlternate",
+          "barrels": 5,
+          "shots": 5,
+          "spread": 7
+          "shotDelay": 5
+      },
+    shootSound: shootConquer
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel1
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrel2
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 1
+    }
+    {
+      type: RegionPart
+      suffix: -barrel3
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 2
+    }
+    {
+      type: RegionPart
+      suffix: -barrel4
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 3
+    }
+    {
+      type: RegionPart
+      suffix: -barrel5
+      progress: recoil
+      heatProgress: recoil
+      moveY: -5
+      under: true
+      heatColor: 8DF9D1
+      recoilIndex: 4
+    }
+  ]
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 255
+      width: 8
+      height: 15
+      sprite: missile-large
+        frontColor: E04545
+     trailLength: 8
+      trailWidth: 2
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+]

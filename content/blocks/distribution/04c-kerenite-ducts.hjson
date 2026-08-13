@@ -1,0 +1,15 @@
+type: Duct
+size: 1
+armored: true
+health: 500
+armor: 10
+speed: 4
+requirements: [
+  kerenium/1
+  iron/1
+]
+research: 04b-rail-duct
+researchCostMultiplier: 1
+category: distribution
+bridgeReplacement: 04d-sil-duct-bridge
+junctionReplacement: 04c-sil-duct-junction

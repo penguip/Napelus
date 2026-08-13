@@ -1,0 +1,19 @@
+type: LiquidRouter
+name: Liquid Container
+description: Stores liquid. Works as a liquid router
+size: 3
+health: 650
+liquidCapacity: 2550
+category: liquid
+squareSprite: false
+research: 06a-liquid-pipe 
+requirements: [
+  iron/45
+  teralite/45
+]
+researchCostMultiplier: 0.1
+researchCost: [
+  iron/350
+  teralite/250
+]
+shownPlanets: [napelus]

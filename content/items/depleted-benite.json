@@ -1,0 +1,7 @@
+name: Depleted Benite
+description: Emit radiation than before. Can be re enriched into enriched benite. Useless in current stage and can be burned if wanted
+research: benite 
+radioactivity: 0.2
+hardness: 3
+healthScaling: 0.10
+shownPlanets: [napelus,Stella]

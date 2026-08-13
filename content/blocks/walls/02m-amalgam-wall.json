@@ -1,0 +1,26 @@
+{
+  "name": "Amalgam Wall"
+  "description": A wall made from Amalgam. Capable of refelcting bullets
+  "type": "Wall",
+  "buildCostMultiplier": 0.1,
+  "buildTime": 710
+  "health": 985,
+  chanceDeflect: 3
+  "size": 1,
+  "armor": 10,
+  shownPlanets: [napelus,Stella]
+  "requirements": [
+    "amalgam/10"
+  ],
+  "research": 02l-large-kere-wall
+ objectives: [
+        {
+            type: "OnSector",
+            preset: "snow-storm-base"
+        }
+    ]
+  researchCost: [
+  amalgam/45
+]
+  "category": defense
+}

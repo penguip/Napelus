@@ -1,0 +1,153 @@
+{
+  "type": "ItemTurret",
+  "name": Firewall,
+  "description": Shoots out a wall of fire at enemy targets. Great crowd control but have a low damage. Uses infrared lights to melt menite
+  "researchCostMultiplier": 0.2,
+  "size": 5,
+  "health": 5500,
+  "reload": 45,
+  "range": 95,
+  "inaccuracy": 0
+  "targetAir": true,
+  "recoil": 3,
+  "rotateSpeed": 0.7,
+  "shootSound": "shootFlame",
+  coolantMultiplier: 1.5
+  "shootWarmupSpeed": 0.01,
+  "shootY": 10
+  minWarmup: 0.5
+moveWhileCharging: false
+consumes: {
+  liquid: infrared-light/0.5
+  power: 3
+}
+  shownPlanets: [napelus]
+    shoot: {
+  type: shootSpread
+  shots: 5
+  spread: 10
+  shotDelay: 0
+}
+  drawer: {
+  type: DrawTurret
+  basePrefix: hammer-
+    parts: [
+     {
+      type: RegionPart
+      suffix: -wingL
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: -2
+      under: true
+      heatColor: FF4141
+    }
+    {
+      type: RegionPart
+      suffix: -wingR
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: 2
+      under: true
+      heatColor: FF4141
+    }
+    {
+      type: RegionPart
+      suffix: -support
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      under: true
+      top: false
+      heatColor: FF4141
+      layerOffset: -0.00001
+    }
+    {
+      type: RegionPart
+      suffix: -bladeA
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      moveX: -7
+      moveY: 0
+      moveRot: -25
+      heatColor: FF4141
+      turretHeatLayer: 49.9
+      under: true
+      layerOffset: -0.3
+    }
+    {
+      type: RegionPart
+      suffix: -bladeB
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      moveX: -15
+      moveY: 12
+      moveRot: 25
+      heatColor: FF4141
+      turretHeatLayer: 49.9
+      under: true
+      layerOffset: -0.3
+    }
+  ]
+}
+  "ammoTypes": {
+    menite: {
+    ammoMultiplier: 5
+    type: BasicBulletType
+    lifetime: 10
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 55
+    drag: 0.05
+    speed: 10
+    knockback: 0
+    pierce: true
+    pierceArmor: false
+    length: 80
+    width: 4.5
+    colors: [e99558, f3ad7a, ffc9a2, ffdfc7, ffffff]
+    fragBullets: 10
+    fragAngle: 45
+    fragBullet: {
+    type: FireBulletType
+    lifetime: 45
+    drawFlare: false
+    hitColor: ffc9a2
+    damage: 955
+    speed: 0.2
+    drag: 0.5
+    knockback: 0
+    pierce: true
+    pierceArmor: false
+    length: 80
+    width: 4.5
+    colors: [e99558, f3ad7a, ffc9a2, ffdfc7, ffffff]
+    }
+  }
+}
+  "requirements": [
+    "silver/755",
+    "iron/455",
+    "amalgam/50"
+    "kerenium/550"
+    "carbide/45"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.333333
+  },
+  "category": "turret",
+  research: {
+    parent: "09i-veil",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "caverns"
+        }
+    ]
+},
+}

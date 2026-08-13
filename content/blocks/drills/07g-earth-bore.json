@@ -1,0 +1,46 @@
+type: BurstDrill
+size: 4
+health: 1000
+shownPlanets: [napelus,Stella]
+category: production
+research: {
+  parent: 07e-force-bore
+  objectives: [
+    {
+      type: SectorComplete 
+      preset: outpost
+    }
+  ]
+}
+hasLiquids: true
+drillTime: 450
+tier: 8
+shake: 4
+arrows: 1
+squareSprite: false
+itemCapacity: 55
+optionalBoostIntensity: 2.5
+researchCost: [
+  silver/1000
+  teralite/1200
+  iron/1000
+  kerenium/550
+]
+consumes: {
+  power: 2.5
+  liquid: ozone/0.3
+  liquids: {
+    liquids: [
+      xenogen/0.0416666666667
+    ]
+    optional: true
+    booster: true
+  }
+}
+requirements: [
+  silver/250
+  teralite/250
+  iron/200
+  kerenium/55
+]
+

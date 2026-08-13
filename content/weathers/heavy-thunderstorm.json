@@ -1,0 +1,18 @@
+type: RainWeather
+color: D3D8ED
+liquid: nylin
+name: Storm
+padding: 55
+sizeMax: 25
+sizeMin: 5
+density: 235
+sound: thunderstorm 
+soundVol: 1
+yspeed: 2
+xspeed: 5
+
+
+
+
+
+

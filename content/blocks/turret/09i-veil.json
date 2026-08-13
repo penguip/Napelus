@@ -1,0 +1,391 @@
+{
+  "type": "ItemTurret",
+  "name": Veil,
+  "description": Shoots superheated material at enemy targets.
+  "researchCostMultiplier": 0.2,
+  heatRequirement: 15
+maxHeatEfficiency: 2
+  "size": 4,
+  "health": 4500,
+  "reload": 755,
+  "range": 400,
+  "inaccuracy": 0
+  "targetAir": true,
+  "recoil": 3,
+  "rotateSpeed": 0.7,
+  "shootSound": "shootConquer",
+  coolantMultiplier: 1.5
+  "shootWarmupSpeed": 0.01,
+  "shootY": 10
+  minWarmup: 0.5
+moveWhileCharging: false
+consumes: {
+  power: 5
+}
+  shownPlanets: [napelus]
+    shoot: {
+  type: shootPattern
+  shots: 1
+  shotDelay: 20
+}
+  drawer: {
+  type: DrawTurret
+  basePrefix: hammer-
+    parts: [
+     {
+      type: RegionPart
+      suffix: -wingA
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: -2
+      under: true
+      heatColor: 8DF9D1
+    }
+    {
+      type: RegionPart
+      suffix: -wingB
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: 2
+      under: true
+      heatColor: 8DF9D1
+    }
+    {
+      type: RegionPart
+      suffix: -support
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      under: true
+      top: false
+      heatColor: 8DF9D1
+      layerOffset: -0.00001
+    }
+    {
+      type: RegionPart
+      suffix: -bladea
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      moveX: -7
+      moveY: -3
+      moveRot: -8
+      heatColor: d1efff45
+      turretHeatLayer: 49.9
+      under: true
+      layerOffset: -0.3
+    }
+    {
+      type: RegionPart
+      suffix: -bladeb
+      progress: warmup
+      heatProgress: warmup
+      mirror: true
+      moveX: -9
+      moveY: -3
+      moveRot: 10
+      heatColor: d1efff45
+      turretHeatLayer: 49.9
+      under: true
+      layerOffset: -0.3
+    }
+  ]
+}
+  "ammoTypes": {
+    "kerenium": {
+      type: ArtilleryBulletType
+    splashDamage: 550
+    splashDamageRadius: 95
+    buildingDamageMultiplier: 0.25
+    lifetime: 800
+    backColor: AAE7D7
+    frontColor: AAE7D7
+    trailWidth: 5
+    trailLength: 10
+    trailColor: aae7d78b
+    speed: 3
+    width: 18
+    height: 23
+    hitEffect: titanExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    status: benite-radiated
+    statusDuration: 350
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: aae7d78b
+      despawnColor: aae7d78b
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "AAE7D7",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "AAE7D7",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "AAE7D7",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "AAE7D7",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "AAE7D7",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
+   fragOnHit: true
+      hitSound: explosionTitan
+      fragBullets: 10
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        drag: 0.0005
+        lifetime: 5
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+  }
+  "amalgam": {
+      type: ArtilleryBulletType
+    splashDamage: 550
+    splashDamageRadius: 65
+    buildingDamageMultiplier: 0.25
+    lifetime: 850
+    backColor: BFA66B
+    frontColor: BFA66B
+    trailColor: BFA66B
+    speed: 4
+    width: 8
+    height: 23
+    hitEffect: blastExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    trailWidth: 5
+    trailLength: 10
+    rangeChange: 172
+    status: melting
+  statusDuration: 155
+    ammoMultiplier: 1
+   fragOnHit: true
+      fragBullets: 5
+      fragOnAbsorb: true
+      fragBullet: {
+        type: ArtilleryBulletType
+    splashDamage: 100
+    splashDamageRadius: 45
+    buildingDamageMultiplier: 0.25
+    lifetime: 55
+    backColor:BFA66B
+    frontColor: BFA66B
+    trailColor: BFA66B
+    speed: 2
+    width: 8
+    height: 23
+    hitEffect: blastExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    trailWidth: 5
+    trailLength: 10
+    rangeChange: 155
+    ammoMultiplier: 1
+    fragBullets: 2
+      fragOnAbsorb: true
+      fragBullet: {
+        type: LiquidBulletType
+    buildingDamageMultiplier: 0.25
+    liquid: slag
+    instantDisapear: false
+    puddleSize: 10
+    backColor: BFA66B
+    frontColor: BFA66B
+    trailColor: BFA66B
+    speed: 0.2
+    width: 8
+    height: 23
+    hitEffect: blastExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    trailWidth: 5
+    trailLength: 10
+    status: melting
+  statusDuration: 350
+    ammoMultiplier: 1
+}
+     "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "line": false
+              "length": 15,
+              "baseLength": 15,
+              "lifetime": 120,
+              "lightColor": "BFA66B",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "BFA66B,
+              "colorTo": "bea56a0",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+         ]
+       }
+         }
+  }
+  "carbide": {
+      type: ArtilleryBulletType
+    damage: 550
+    splashDamage: 450
+    splashDamageRadius: 50
+    buildingDamageMultiplier: 0.25
+    lifetime: 450
+    rangeChange: 80
+    backColor: CFA3C8
+    frontColor: CFA3C8
+    status: melting
+  statusDuration: 155
+    speed: 4
+    width: 8
+    height: 23
+    trailWidth: 5
+    trailLength: 10
+    trailColor: CFA3C8
+    hitEffect: titanExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: CFA3C8
+      despawnColor: CFA3C8
+      "hitEffect": [titanExplosion]
+   fragOnHit: true
+      fragLifeMin: 0.1
+      fragBullets: 10
+      collidesAir: false
+      buildingDamageMultiplier: 0.25
+      fragBullet: {
+        type: ArtilleryBulletType
+        buildingDamageMultiplier: 0.25
+        drag: 0.02
+        hitEffect: massiveExplosion
+        despawnEffect: scatheSlash
+        damage: 35
+        status: shocked
+        knockback: 1
+        lifetime: 80
+        width: 18
+        height: 18
+        collidesTiles: true
+        collidesAir: true
+        status: melting
+  statusDuration: 155
+        splashDamage: 120
+        splashDamageRadius: 30
+        backColor: CFA3C8
+        trailColor: CFA3C8
+        hitColor: CFA3C8
+        lightColor: CFA3C8
+        frontColor: CFA3C8
+        smokeEffect: shootBigSmoke2
+        despawnShake: 10
+        lightRadius: 30
+        lightOpacity: 0.65
+      }
+  }
+}
+  "requirements": [
+    "iron/355",
+    "teralite/120",
+    "kerenium/150"
+    "amalgam/65"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.333333
+  },
+  "category": "turret",
+  research: {
+    parent: "09c-force",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "caverns"
+        }
+    ]
+},
+}

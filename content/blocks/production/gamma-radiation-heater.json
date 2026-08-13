@@ -1,0 +1,36 @@
+type: HeatProducer
+name: Gamma Ray Heater
+description: Uses gamma rays and harvest the heat they produce. The best heating source
+size: 4
+heatOutput: 40
+health: 2000
+craftTime: 120
+researchCostMultiplier: 0.5
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+  }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  liquid: gamma-ray/0.6
+}
+ambientSound: loopHum
+ambientSoundVolume: 0.1
+category: crafting
+research: infrared-heater
+requirements: [
+  steel/45
+  tatrotriolite-crystal/10
+  iron/55
+]
+group: heat

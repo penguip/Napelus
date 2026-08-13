@@ -1,0 +1,15 @@
+type: ArmoredConduit
+category: liquid
+requirements: [
+  iron/1
+  kerenium/1
+]
+health: 500
+rotBridgeReplacement: 06b-liquid-bridge
+solid: false
+research: 06a-liquid-pipe
+researchCost: [
+  iron/350
+  kerenium/25
+]
+leaks: false

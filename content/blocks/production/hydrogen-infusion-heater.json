@@ -1,0 +1,52 @@
+type: HeatProducer
+name: Hydrogen Infusion Heater
+description: Uses Menite alongside hydrogen to produce a chain reaction,production a lot of heat. Essential in the endgames
+size: 3
+heatOutput: 15
+health: 1250
+craftTime: 120
+researchCostMultiplier: 0.5
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: hydrogen
+  }
+  {
+      type: DrawCrucibleFlame
+      flameRad: 2
+      circleSpace: 1
+      particleSize: 3
+      particleRad: 5
+      particles: 5
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  liquid: hydrogen/0.1
+  items: [
+    menite/1
+  ]
+}
+ambientSound: loopHum
+ambientSoundVolume: 0.1
+category: crafting
+research: eletric-heater
+requirements: [
+  iron/155
+  teralite/85
+  carbide/ 35
+]
+group: heat

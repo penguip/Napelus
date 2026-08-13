@@ -1,0 +1,96 @@
+type: HeatCrafter
+size: 3
+name: Ozone Diffusing Chamber
+description: Diffuses ozone into our percious,breathable oxygen
+rotate: true
+liquidOutputDirections: [0]
+health: 650
+liquidCapacity: 60
+hasLiquids: true
+heatRequirement: 4
+lightLiquid: ilum
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: ozone
+  }
+  {
+    type: DrawBubbles
+    color: 9B9BCC
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 24
+  }
+  {
+    type: DrawBubbles
+    color: D6DDFF
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 12
+  }
+  {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+   {
+    type: DrawRegion
+  }
+  {
+      type: DrawLiquidOutputs
+    }
+]
+consumes: {
+  liquids: [
+    ozone/0.1
+  ]
+  power: 1
+}
+outputLiquids: [
+  oxygen/0.2
+]
+category: crafting
+requirements: [
+  silver/50
+  iron/55
+  magnesium/30
+  teralite/55
+]
+ambientSound: loopCultivator
+ambientSoundVolume: 0.085
+squareSprite: false
+research: {
+  parent: 01e-a-nylin-elect
+  objectives: [
+    {
+      type: OnSector
+      preset: caverns
+    }
+  ]
+}
+researchCost: [
+  silver/100
+  iron/110
+  magnesium/60
+  teralite/110
+]
+
+
+
+
+
+
+
+
+
+
+
+

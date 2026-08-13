@@ -1,0 +1,31 @@
+type: CoreBlock
+size: 5
+health: 12000
+armor: 15
+unitType: forward
+requirements: [
+ steel/1100
+ amalgam/2500
+ iron/2000
+ benite/1500
+ carbide/1000
+ kerenium/1000
+ silver/2000
+]
+requiresCoreZone: true
+incinerateNonBuildable: true
+category: effect
+isFirstTier: false
+squareSprite: false
+alwaysUnlocked: false
+itemCapacity: 10000
+unitCapModifier: 50
+research: {
+  parent: 08a-exulus 
+  objectives: [
+    {
+      type: SectorComplete 
+      preset: outpost
+    }
+  ]
+}

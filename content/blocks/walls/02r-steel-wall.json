@@ -1,0 +1,20 @@
+{
+  "name": "Large Steel Wall"
+  "type": "Wall",
+  "description": A larger wall of steel. Extremely durable
+   "buildCostMultiplier": 0.1,
+  chanceDeflect: 10
+  "buildTime": 1100
+  "health": 4250,
+  "size": 2,
+  "armor": 35,
+  shownPlanets: [napelus]
+  "requirements": [
+    "steel/20"
+  ],
+  "research": 02c-iron-wall 
+  "category": defense
+  researchCost: [
+  steel/500
+]
+}

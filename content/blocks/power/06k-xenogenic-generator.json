@@ -1,0 +1,74 @@
+{
+  "type": "ImpactReactor",
+  "researchCostMultiplier": 0.5,
+  "health": 3450,
+  "size": 5,
+  "lightColor": "AFB0D6",
+  "baseExplosiveness": 5000,
+  "explosionRadius": 200,
+  "explosionDamage": 5000,
+  "hasLiquids": true,
+  "powerProduction": 200,
+  "warmupSpeed": 0.003,
+  "itemDuration": 380,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+      type: DrawLiquidTile
+      drawLiquid: xenogen
+      alpha: 1
+      padding: 3
+    } 
+    {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "afafd57c"
+        "flameRadiusScl": 1
+        "circleStroke": 0
+        "flameRad": 0
+        "particleRad": 10
+      }
+      {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "afafd57c"
+        "flameRadiusScl": 1
+        "circleStroke": 0
+        "flameRad": 0
+        "particleRad": 10
+      }
+      {
+      type: DrawPlasma
+	  plasmas: 3
+	  plasma1: afafd57c
+	  plasma2: afafd57c
+	  plasma3: afafd57c
+    }
+      {
+        "type": "DrawDefault"
+      },
+    ]
+  },
+  "consumes": {
+    "power": 25,
+    "liquids": [
+      "xenogen/3"
+    ]
+  },
+  "requirements": [
+  tatrotriolite-crystal/100
+  kerenium/150
+  steel/1350
+  amalgam/350
+  carbide/550
+  ],
+  "category": "power",
+  "loopSound": "pulse",
+  "loopSoundVolume": 1.0,
+  "research": "06j-magnetite-stasis-reactor",
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.85
+}

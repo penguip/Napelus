@@ -1,0 +1,81 @@
+type: GenericCrafter
+size: 3
+name: Nylin Electrolyzer
+liquidOutputDirections: [1,2]
+description: Same as the electrolyzer, nothing interesting
+health: 450
+craftTime: 60
+liquidCapacity: 60
+hasLiquids: true
+lightLiquid: ilum
+rotate: true
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: nylin
+  }
+  {
+    type: DrawBubbles
+    color: FFFFFF
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 24
+  }
+  {
+    type: DrawBubbles
+    color: FFFFFF
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 12
+  }
+  {
+    type: DrawRegion
+  }
+  {
+        type: drawLiquidOutputs
+    }
+]
+consumes: {
+  liquids: [
+    nylin/0.5
+  ]
+  power: 0.8
+}
+outputLiquids: [
+  hydrogen/0.2
+  ozone/0.2
+]
+category: crafting
+requirements: [
+  silver/75
+  iron/50
+  magnesium/45
+  teralite/60
+]
+ambientSound: loopCultivator
+ambientSoundVolume: 0.085
+squareSprite: false
+research: {
+  parent: 01d-nitrogen-accumulator
+  objectives: [
+    {
+      type: OnSector
+      preset: arrival
+    }
+  ]
+}
+researchCost: [
+  silver/150
+  iron/100
+  magnesium/90
+  teralite/120
+]

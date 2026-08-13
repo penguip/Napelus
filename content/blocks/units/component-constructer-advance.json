@@ -1,0 +1,34 @@
+type: Constructor
+name: Gamma Components Fabricator 
+description: fabricates components for T6 unit assembly. Need pure gamma rays for extreme precise fabrication.
+size: 4
+health: 1200
+category: units
+requirements: [
+  steel/50
+  carbide/30
+  amalgam/35
+  tatrotriolite-crystal/55
+] 
+hasPower: true
+consumes: {
+  power: 2
+  liquid: gamma-ray/0.6
+}
+buildSpeed: 1
+filter: [
+ hyperion-engine
+ gravity-joint
+]
+research: {
+    parent: "component-constructer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+squareSprite: false
+maxBlockSize: 4
+researchCostMultiplier: 0.5
