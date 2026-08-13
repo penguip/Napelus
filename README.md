@@ -1,8 +1,8 @@
-Wellllll new mod
-This mod introduces a new planet named Napelus in the Staria system
+pART ONE OF THE BIGGEST UPDATE
 
-UPDATE 0.2
-1. Added helis,naval and spider units.
-2. new iems
-3. added an old friend...
-and thats it. Enjoy :)
+
+
+
+Take a look,many things has changed since you last played
+
+NOTE: THE CAMPAIGN IS NOT FINISHED AND SOME SPRITES AND CONTENT ARE NOT IMPLEMENTED YET
