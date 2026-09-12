@@ -146,7 +146,7 @@ weapons: [
     rotateSpeed: 1
     x: -22
     y: 23
-    reload: 15
+    reload: 45
     recoil: 1.25
     inaccuracy: 5
     shootSound: shootDisperse
@@ -191,7 +191,7 @@ weapons: [
     rotateSpeed: 1
     x: 0
     y: 37
-    reload: 15
+    reload: 45
     recoil: 1.25
     inaccuracy: 5
     shootSound: shootDisperse
