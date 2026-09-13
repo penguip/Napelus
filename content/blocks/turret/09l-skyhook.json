@@ -34,6 +34,11 @@ ammoTypes: {
     displayAmmoMultiplier: false
     spawnUnit: missile-amalgate
   }
+  menite: {
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
+    spawnUnit: missile-amalgate
+  }
   magnetite: {
     ammoMultiplier: 1
     displayAmmoMultiplier: false
