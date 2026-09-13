@@ -75,7 +75,7 @@ weapons: [
     flareLength: 18
     collidesAir: false
   flareColor: B4E2FF
-    status: unmoving
+    status: melting
   statusDuration: 155
     speed: 6
     width: 45
@@ -151,7 +151,7 @@ weapons: [
       }
    fragOnHit: true
       fragLifeMin: 0.1
-      fragBullets: 55
+      fragBullets: 5
       collidesAir: false
       buildingDamageMultiplier: 0.25
       fragBullet: {
