@@ -64,64 +64,124 @@ weapons: [
           shake: 16
     despawnExplosionEffect: massiveExplosion
     bullet: {
-      "smokeEffect": "shootSmokeTitan",
-      "shootEffect": "shootTitan",
-      "speed": 3,
-      "ammoMultiplier": 3,
-      "height": 16,
-      "type": "BasicBulletType",
-      "width": 16,
-      "sprite": "large-orb",
-      "hittable": false,
-      "splashDamage": 2000,
-       splashDamageRadius: 45
-      "lifetime": 40,
-      "pierce": false,
-      "collides": true,
-      "knockback": 8,
-      "fragBullets": 3,
-      "fragRandomSpread": 0,
-      "fragSpread": 45,
-      "fragLifeMin": 1,
-      "fragVelocityMin": 1,
-      "fragBullet": {
-        "speed": 18,
-        "lifetime": 2,
-        "damage": 0,
-        "width": 0,
-        "height": 0,
-        "collides": false,
-        "despawnEffect": "none",
-        "hitEffect": "none",
-        "fragSpread": 50,
-        "fragBullets": 1,
-        "fragRandomSpread": 0,
-        "fragLifeMin": 1,
-        "fragBullet": {
-          "type": "BasicBulletType",
-          "collidesAir": false,
-          "height": 16,
-          "width": 16,
-          "hitSize": 32,
-          "damage": 75,
-          "sprite": "large-orb"
-          "frontColor": "d99f6b",
-          "shrinkX": 0,
-          "shrinkY": 0,
-          "despawnEffect": "none",
-          "backColor": "f3e979",
-          "splashDamage": 190,
-          "splashDamageRadius": 45,
-          "speed": 0,
-          "hittable": false,
-          "hitEffect": "blastExplosion",
-          "collides": true,
-          "pierce": false,
-          "lifetime": 720,
-          "status": "melting",
-          "statusDuration": 240
-        }
+      type: ExplosiveBulletType
+    damage: 1660
+    splashDamage: 500
+    splashDamageRadius: 125
+    buildingDamageMultiplier: 0.25
+    lifetime: 250
+    backColor: B4E2FF
+    frontColor: B4E2FF
+    flareLength: 18
+    collidesAir: false
+  flareColor: B4E2FF
+    status: unmoving
+  statusDuration: 155
+    speed: 6
+    width: 45
+    height: 45
+    trailWidth: 5
+    trailLength: 10
+    trailColor: B4E2FF
+    sprite: nap-end-times
+    hitEffect: titanExplosion
+    spin: 5
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    drag: 0.03
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: ffffff8a
+      despawnColor: ffffff8a
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a,
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+         ]
       }
+   fragOnHit: true
+      fragLifeMin: 0.1
+      fragBullets: 55
+      collidesAir: false
+      buildingDamageMultiplier: 0.25
+      fragBullet: {
+        type: ExplosiveBulletType
+        buildingDamageMultiplier: 0.25
+        drag: 0.02
+        hitEffect: massiveExplosion
+        despawnEffect: scatheSlash
+        damage: 350
+        status: freezing
+        statusDuration:155
+        knockback: 1
+        lifetime: 80
+        width: 18
+        height: 18
+        collidesTiles: true
+        collidesAir: true
+        splashDamage: 50
+        splashDamageRadius: 30
+        backColor: B4E2FF
+        trailColor: B4E2FF
+        hitColor: B4E2FF
+        lightColor: B4E2FF
+        frontColor: B4E2FF
+        smokeEffect: shootBigSmoke2
+        despawnShake: 10
+        lightRadius: 30
+        lightOpacity: 0.65
+      }
+  }
     }
   }
 ]

@@ -86,7 +86,7 @@ moveWhileCharging: false
               "cone": 360,
               "colorFrom": "FFFFFF",
               "colorTo": "aae7d78b",
-              "sizeFrom": 5,
+              "sizeFrom": 10,
               "sizeTo": 0
             },
             {
@@ -102,7 +102,7 @@ moveWhileCharging: false
               "cone": 360,
               "colorFrom": "FFFFFF",
               "colorTo": "ffffff8a",
-              "sizeFrom": 5,
+              "sizeFrom": 7,
               "sizeTo": 0
             },
             {
@@ -199,7 +199,7 @@ moveWhileCharging: false
               "cone": 360,
               "colorFrom": "CFA3C8",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 5,
+              "sizeFrom": 10,
               "sizeTo": 0
             },
             {
@@ -231,7 +231,7 @@ moveWhileCharging: false
               "cone": 360,
               "colorFrom": "CFA3C8",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 5,
+              "sizeFrom": 2,
               "sizeTo": 0
             },
          ]
@@ -307,7 +307,7 @@ moveWhileCharging: false
               "cone": 360,
               "colorFrom": "EFC47F",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 5,
+              "sizeFrom": 10,
               "sizeTo": 0
             },
             {
