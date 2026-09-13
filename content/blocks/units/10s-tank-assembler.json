@@ -42,7 +42,8 @@ plans: [
     requirements: [
       nap-02r-steel-wall/6
       nap-02o-large-carbide-wall/6
-      nap-03c-pain/4
+      nap-fortress-treads/9
+      nap-03b-harm/6
     ]
     time: 12000
   }

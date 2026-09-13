@@ -1,4 +1,4 @@
-name: High
+name: Air
 description: Defender of the Exulus core. Ingored by multiple enemies and turrets
 controller: BuilderAI
 coreFleeRange: 500
@@ -43,7 +43,7 @@ abilities: [
       lightScl: 3
       lightOpacity: 2
       spin: 0
-      sizeFrom: 2
+      sizeFrom: 1
       sizeTo: 0
       offset: 0
     }
@@ -67,7 +67,7 @@ abilities: [
       lightScl: 3
       lightOpacity: 2
       spin: 0
-      sizeFrom: 2
+      sizeFrom: 1
       sizeTo: 0
       offset: 0
     }

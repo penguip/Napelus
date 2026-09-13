@@ -1,0 +1,13 @@
+type: Junction
+size: 4
+customShadow: true
+placeablePlayer: false
+"buildTime": 900
+requirements: [
+  steel/55
+  iron/55
+  carbide/35
+]
+research: 10k-unit-reformer
+researchCostMultiplier: 1
+
