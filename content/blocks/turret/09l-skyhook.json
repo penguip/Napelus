@@ -37,7 +37,7 @@ ammoTypes: {
   menite: {
     ammoMultiplier: 1
     displayAmmoMultiplier: false
-    spawnUnit: missile-menite
+    spawnUnit: missile-landmine
   }
   magnetite: {
     ammoMultiplier: 1
