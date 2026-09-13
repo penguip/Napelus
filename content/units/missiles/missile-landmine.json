@@ -181,7 +181,6 @@ weapons: [
         lightRadius: 30
         lightOpacity: 0.65
       }
-  }
     }
   }
 ]
