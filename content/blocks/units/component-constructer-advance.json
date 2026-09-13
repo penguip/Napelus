@@ -19,6 +19,7 @@ buildSpeed: 1
 filter: [
  hyperion-engine
  gravity-joint
+ steel-hull
 ]
 research: {
     parent: "component-constructer",

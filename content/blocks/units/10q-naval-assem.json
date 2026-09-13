@@ -29,8 +29,8 @@ plans: [
     type: AssemblerUnitPlan
     unit: 06e-upsurge 
     requirements: [
-      nap-02f-large-tera-wall/2
-      nap-02j-large-be-wall/5
+      nap-02o-large-carbide-wall/4
+      nap-02l-large-kere-wall/6
       nap-06b-stream/2
       nap-heavy-hull/4
     ]
@@ -40,11 +40,12 @@ plans: [
     type: AssemblerUnitPlan
     unit: 06f-poseidon 
     requirements: [
-      nap-02f-large-tera-wall/7
-      nap-02b-large-silver-wall/2
-      nap-06c-wave/3
+      nap-02o-large-carbide-wall/6
+      nap-02p-magnetite-wall-large/8
+      nap-06b-stream/4
+      nap-steel-hull/6
     ]
-    time: 10000
+    time: 16800
   }
 ]
 squareSprite: false
